@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        body {
+            background-color: hsl(189, 40%, 95%);
+        }
+        input.input_enter {
+            margin:32px 0;
+            width:50%;
+            height:64px;
+            border-radius: 32px;
+            border: none;
+            text-align: center;
+            font-size:24px;
+        }
+        div.bank {
+            width:90%;
+            padding:64px 0;
+            background-color: hsl(217, 49%, 60%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:32px auto;
+            flex-direction: column;
+        }
+        div.bank_result {
+            width:90%;
+            /* height: 50vh; */
+            background-color: #41729F;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin:32px auto;
+            flex-direction: column;
+            padding:64px 0;
+        }
+        h1.white {
+            color:white;
+        }
+        p.text_result {
+            margin-top:16px;
+            display:block;
+            width:70%;
+            height:60px;
+            background-color: #C3E0E5;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        p.white {
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="bank">
+        <h1 class="white">Online bank system KVPTK</h1>
+        <input type="text" class="input_enter" onchange="getResult()">
+        <p class="white">Result: <b><span class="getResult"></span></b></p>
+    </div>
+    <div class="bank_result">
+        <h1 class="white">Result</h1>
+        <span></span>
+    </div>
+    <script src="looper.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
